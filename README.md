@@ -42,14 +42,8 @@ Micro-interactions and animations bring the interface to life:
 - Tailwind CSS
 - shadcn/ui
 
-## How to run this project?
+## Developer
 
-1. Install the necessary dependencies:
-   ```sh
-   npm i
-   ```
+Created by Domince Aseberos. View my full portfolio here:
+[dominceaseberos.vercel.app](https://dominceaseberos.vercel.app)
 
-2. Start the development server:
-   ```sh
-   npm run dev
-   ```
