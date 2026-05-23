@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 34 50% 95%; /* Ivory Sand #FAF6EF */
+    --foreground: 210 30% 17%; /* Deep Slate #1E2A38 */
+
+    --card: 0 0% 100%; /* Cloud White */
+    --card-foreground: 210 30% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 17%;
+
+    --primary: 40 42% 48%; /* Horizon Gold #B8943F */
+    --primary-foreground: 210 30% 17%;
+
+    --secondary: 16 48% 56%; /* Terracotta Blush #C6735A */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 12% 60%; /* Driftwood #A9998A */
+    --muted-foreground: 30 12% 50%;
+
+    --accent: 40 42% 48%;
+    --accent-foreground: 210 30% 17%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 34 20% 88%;
+    --input: 34 20% 88%;
+    --ring: 40 42% 48%;
+
+    --radius: 0.5rem;
+
+    /* Custom Voyara tokens */
+    --ivory-sand: 34 50% 95%;
+    --deep-slate: 210 30% 17%;
+    --horizon-gold: 40 42% 48%;
+    --terracotta: 16 48% 56%;
+    --driftwood: 30 12% 60%;
+    --cloud-white: 0 0% 100%;
+    --deep-ocean: 207 52% 12%;
+
+    --font-display: 'Libre Baskerville', serif;
+    --font-ui: 'Jost', sans-serif;
+    --font-body: 'Lora', serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-ui {
+    font-family: var(--font-ui);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+  .text-gold {
+    color: hsl(var(--horizon-gold));
+  }
+  .bg-gold {
+    background-color: hsl(var(--horizon-gold));
+  }
+  .bg-ivory {
+    background-color: hsl(var(--ivory-sand));
+  }
+  .bg-ocean {
+    background-color: hsl(var(--deep-ocean));
+  }
+  .text-ivory {
+    color: hsl(var(--ivory-sand));
+  }
+  .text-driftwood {
+    color: hsl(var(--driftwood));
+  }
+  .text-slate-deep {
+    color: hsl(var(--deep-slate));
+  }
+  .border-gold {
+    border-color: hsl(var(--horizon-gold));
+  }
+  .tracking-voyara {
+    letter-spacing: 0.2em;
+  }
+}
