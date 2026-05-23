@@ -35,12 +35,15 @@ Micro-interactions and animations bring the interface to life:
 - **Ticker**: A continuous horizontal scrolling animation used for photo albums or continuous galleries.
 - **Accordion**: Smooth vertical expansion and collapse for FAQ or itinerary details.
 
-## Tech Stack
-- Vite
-- React
-- TypeScript
-- Tailwind CSS
-- shadcn/ui
+## Tech Stack & UI Libraries
+- **Core:** React, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui (built on Radix UI primitives)
+- **Icons:** Lucide React
+- **Animations:** Framer Motion, tailwindcss-animate
+- **Carousels:** Embla Carousel
+- **Toasts:** Sonner
+- **Drawers:** Vaul
 
 ## Developer
 
