@@ -82,9 +82,9 @@ const Hero = () => {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+          initial={{ opacity: 0, y: 50, scale: 0.98 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ type: "spring", stiffness: 40, damping: 14, delay: 0.2 }}
           className="font-display italic text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-cloud-white leading-[1.1] max-w-5xl"
         >
           <span className="block">Every journey</span>
@@ -100,17 +100,17 @@ const Hero = () => {
             {/* Underline accent */}
             <motion.span
               className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-px bg-gradient-to-r from-transparent via-horizon-gold/60 to-transparent"
-              initial={{ width: 0 }}
-              animate={{ width: "60%" }}
-              transition={{ delay: 1.4, duration: 1, ease: "easeOut" }}
+              initial={{ width: 0, opacity: 0 }}
+              animate={{ width: "60%", opacity: 1 }}
+              transition={{ delay: 1.2, duration: 1.2, ease: "circOut" }}
             />
           </motion.span>
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 50, damping: 20, delay: 0.9 }}
           className="font-ui font-light text-sm md:text-base text-cloud-white/70 tracking-wider mt-10 max-w-lg"
         >
           Handcrafted itineraries for the world's most unforgettable destinations
